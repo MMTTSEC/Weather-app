@@ -2,6 +2,7 @@
 .vscode/*
 .vscode
 .env
+./js/config.js
 
 ### macOS ###
 # General
