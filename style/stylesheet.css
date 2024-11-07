@@ -1,7 +1,24 @@
-header,
-footer {
-  background-color: grey;
+/* .container-fluid {
+  border: 2px dashed yellow;
 }
-.container {
-  background-color: rgb(218, 218, 218);
+
+.col {
+  border: 2px dashed salmon;
+} */
+
+/* Placeholder for landing page */
+#landing-page {
+  background: url(/Weather-app/img/rwanda-1.png);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header & sidebar @ width <= 991px */
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
 }
