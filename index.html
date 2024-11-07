@@ -12,7 +12,8 @@
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style/stylesheet.css" />
-    <title>Srwanda | Weather App</title>
+
+    <title>Rwanda | Weather App</title>
   </head>
   <body>
     <!-- Header starts here -->
@@ -75,6 +76,20 @@
     <main>
       <section class="container-fluid vh-100 overflow-hidden" id="landing-page">
         <!-- Sections for widgets and country goes here -->
+
+        <!--Dropdown menu for selecting a city---->
+        <div class="container p-2">
+          <div class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle border border-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Select a City
+            </button>
+            <ul class="dropdown-menu" id="cityDropdown"></ul>
+          </div>
+        </div>
       </section>
       <section class="container-fluid" id="info-sweden">
         <h1>Info Sweden</h1>
@@ -84,5 +99,8 @@
       </section>
     </main>
     <!-- Main Content ends here -->
+
+    <!-- Links to the js-script-folder -->
+    <script src="script/script.js"></script>
   </body>
 </html>
