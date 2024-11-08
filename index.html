@@ -74,11 +74,61 @@
 
     <!-- Main Content goes here -->
     <main>
-      <section class="container-fluid vh-100 overflow-hidden" id="landing-page">
+      <section
+        class="container-fluid min-vh-100 overflow-hidden align-content-around"
+        id="landing-page">
         <!-- Sections for widgets and country goes here -->
+        <div class="row justify-content-center gap-2">
+          <!-- Cards/widgets goes here -->
 
+          <!-- Placeholder widget -->
+          <div class="col-auto px-5 card rounded-2 align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">Linköping</h5>
+              <h6 class="card-subtitle">Sweden</h6>
+              <p class="card-text">Temp:</p>
+              <p class="card-text">Wind:</p>
+              <p class="card-text">Humidity:</p>
+              <div class="container p-2">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle border border-dark"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Select a City
+                  </button>
+                  <ul class="dropdown-menu" id="cityDropdown"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder widget -->
+          <div class="col-auto px-5 card rounded-2 align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">Linköping</h5>
+              <h6 class="card-subtitle">Sweden</h6>
+              <p class="card-text">Temp:</p>
+              <p class="card-text">Wind:</p>
+              <p class="card-text">Humidity:</p>
+              <div class="container p-2">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle border border-dark"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Select a City
+                  </button>
+                  <ul class="dropdown-menu" id="cityDropdown"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--Dropdown menu for selecting a city---->
-        <div class="container p-2">
+        <!-- <div class="container p-2">
           <div class="dropdown">
             <button
               class="btn btn-primary dropdown-toggle border border-dark"
@@ -89,7 +139,7 @@
             </button>
             <ul class="dropdown-menu" id="cityDropdown"></ul>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="container-fluid" id="info-sweden">
         <h1>Info Sweden</h1>
