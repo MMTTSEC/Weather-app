@@ -25,8 +25,42 @@
                 <input type="text" id="cityInput" class="form-control" placeholder="Enter city" aria-label="City">
                 <button onclick="" class="btn btn-primary">Search</button>
               </div>
-              <!-- Error Message Display -->    <!-- d none to hide the error bar -->          
-          <div id="errorMessage" class="alert alert-danger  " role="alert"></div>
+              <!-- Error Message Display -->    <!-- d-none to hide the error bar -->          
+          <div id="errorMessage" class="alert alert-danger   " role="alert">tmp:text</div>
+
+                        <!-- toggle button -->
+          <div class="d-flex justify-content-center align-items-center mb-4">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="forecastToggle" onchange=" ">
+            </div>
+            <label class="form-check-label ms-2" for="forecastToggle">Forecast</label>
+          </div>
+
+          <!-- Weather Widget  -->                                                  <!-- don't forget to change it to display: none; -->
+          <div id="weatherWidget" class="card text-body" style="border-radius: 35px; ">
+            <div class="card-body p-4">
+              <div class="d-flex">
+                <h6 id="cityName" class="flex-grow-1">City</h6>
+                <h6 id="time">00:00</h6>
+              </div>
+              <div class="d-flex flex-column text-center mt-5 mb-4">
+                <h6 id="temperature" class="display-4 mb-0 font-weight-bold">0°C</h6>
+                <span id="condition" class="small" style="color: #868B94">Clear</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="flex-grow-1" style="font-size: 1rem;">
+                  <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span id="wind">0 km/h</span></div>
+                  <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span id="humidity">0%</span></div>
+                </div>
+                <div>
+                  <img id="weatherIcon" src="" width="100px" alt="Weather Icon">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
 
 
           </div>
