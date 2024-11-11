@@ -1,0 +1,39 @@
+/* section 4 */
+/* #region section 4 start*/
+.section4 {
+  background-image: url(../img/zebra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section4-title span, .section4-text {
+  background-color: rgba(0, 0, 0, 0.199); 
+  color: white; 
+}
+
+
+
+
+
+
+
+
+/* #endregion section 4 end*/
+
+/* section 5 */
+/* #region section 5 start*/
+
+
+
+/* #endregion section 5 end*/
+
+
+
+
+/* section 6 */
+/* #region section 6 start*/
+.section6 {
+  color: white;;
+}
+
+/* #endregion section 6 end*/
