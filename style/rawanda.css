@@ -1,0 +1,16 @@
+/* Placeholder for rwanda page */
+#landing-page-rwanda{
+  background: url(../img/rwanda-1.png);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header & sidebar @ width <= 991px */
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+}
