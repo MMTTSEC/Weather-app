@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0),rgba(251, 255, 0, 0)), url(../imgsweden/swedenpic2.jpg);
+    height: 100vh;
+
+}
+h1{
+    
+    text-align: center;
+    padding: 20px;
+    text-shadow: -3px 3px 4px blue, 3px -3px 3px yellow ;
+    margin: 10px;
+}
+
+p {
+    text-shadow: -1px 1px 1px black, 1px -1px 1px yellow , 1px -1px 1px black;
+    font: bold;
+    font-size: 20px;
+    margin: 10px
+}
+
+
+h3{
+    text-shadow: -3px 3px 5px blue, 3px -3px 5px yellow ;
+    text-transform: uppercase;
+    margin: 10px;
+}
+ul{
+    text-shadow: -1px 1px 5px blue, 1px -1px 5px yellow ;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 10px;
+    padding: 0px;
+    font:bolder;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+   
+
+}
+.pic3{
+    width: 400px;
+    margin: 10px;
+}
+
+.parent1{
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0),rgba(251, 255, 0, 0));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 10px;
+
+    grid-template-areas: 
+    "head head head head"
+    "nav nav sidebar sidebar"
+    "footer footer1 footer2 footer3"
+    
+    
+    ;
+    
+}
+.header{
+   grid-area: head;
+    
+    
+}
+.nav1{
+    grid-area: nav;
+
+}
+.sidebar1{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+    background-color: red;
+}
+.footer1{
+    grid-area: footer1;
+    background-color: blue;
+}
+.footer2{
+    grid-area: footer2;
+    background-color: black;
+}
+.footer3{
+    grid-area: footer3;
+    background-color: rgb(21, 255, 0);
+}
