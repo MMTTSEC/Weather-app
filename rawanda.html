@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <link rel="stylesheet" href="style/rawanda.css" />
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../style/rawanda.css" />
 
     <title>Rwanda | Weather App</title>
   </head>
@@ -23,8 +21,7 @@
     <header>
       <!-- Navbar goes here -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-25 fixed-top"
-      >
+        class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-25 fixed-top">
         <div class="container">
           <!-- Logo -->
           <a class="navbar-brand fs-2" href="#">Rwanda</a>
@@ -35,8 +32,7 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -45,8 +41,7 @@
             class="sidebar offcanvas offcanvas-start"
             tabindex="-1"
             id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
+            aria-labelledby="offcanvasNavbarLabel">
             <!-- Sidebar Header -->
             <div class="offcanvas-header text-white">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rwanda</h5>
@@ -54,8 +49,7 @@
                 type="button"
                 class="btn-close btn-close-white"
                 data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+                aria-label="Close"></button>
             </div>
             <!-- Sidebar body -->
             <div class="offcanvas-body">
@@ -103,10 +97,10 @@
 
     <!-- Main Content goes here -->
     <main>
+      <!-- Landing Rwanda -->
       <section
         class="container-fluid min-vh-100 overflow-hidden align-content-around"
-        id="landing-page-rwanda"
-      >
+        id="landing-page-rwanda">
         <!-- Sections for widgets and country goes here -->
         <div class="row justify-content-center gap-2">
           <!-- Cards/widgets goes here -->
@@ -125,8 +119,7 @@
                     class="btn btn-primary dropdown-toggle border border-dark"
                     type="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                    aria-expanded="false">
                     Select a City
                   </button>
                   <ul class="dropdown-menu" id="cityDropdown"></ul>
@@ -149,8 +142,7 @@
                     class="btn btn-primary dropdown-toggle border border-dark"
                     type="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                    aria-expanded="false">
                     Select a City
                   </button>
                   <ul class="dropdown-menu" id="cityDropdown"></ul>
@@ -176,19 +168,17 @@
 
       <!-- Section 4 Rwanda introduction -->
       <section
-        class="bg-image container-fluid section4 d-inline-block"
-        id="info-rwanda"
-      >
-        <div class="row mt-5 mb-5 align-items-center justify-content-center p-4">
+        class="container-fluid section4 min-vh-100 overflow-hidden align-content-around"
+        id="info-rwanda">
+        <div
+          class="row mt-5 mb-5 align-items-center justify-content-center p-4">
           <div
-            class="section4-title col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 fs-1 fw-bold"
-          >
+            class="section4-title col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 fs-1 fw-bold">
             <span>Info Rwanda</span>
           </div>
           <!-- section 4 text -->
           <div
-            class="section4-text text-start col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12"
-          >
+            class="section4-text text-start col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
             Rwanda, officially the Republic of Rwanda, is a landlocked country
             in the Great Rift Valley of East Africa, where the African Great
             Lakes region and Southeast Africa converge. Located a few degrees
@@ -270,12 +260,11 @@
           </div>
           <!-- section 5 image -->
           <div class="col-12 col-md-2">
-            <img src="./img/flag.png" alt="flag" class="img-fluid rounded" />
+            <img src="../img/flag.png" alt="flag" class="img-fluid rounded" />
             <img
-              src="./img/rwanda-2.jpg"
+              src="../img/rwanda-2.jpg"
               alt="rwanda"
-              class="img-fluid rounded"
-            />
+              class="img-fluid rounded" />
           </div>
         </div>
       </section>
@@ -285,10 +274,9 @@
           <!-- section 6 col-1 -->
           <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
             <img
-              src="./img/elephant.jpg"
+              src="../img/elephant.jpg"
               alt="elephant"
-              class="img-fluid rounded"
-            />
+              class="img-fluid rounded" />
             <div class="section6-text">
               <span class="fw-bold">Akagera National Park</span>
               <p class="text-start">
@@ -305,10 +293,9 @@
           <!-- section 6 col-2 -->
           <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-4">
             <img
-              src="./img/gorilla.jpg"
+              src="../img/gorilla.jpg"
               alt="gorilla"
-              class="img-fluid rounded"
-            />
+              class="img-fluid rounded" />
             <div class="section6-text">
               <span class="fw-bold">Gorilla Tracking</span>
               <p class="text-start">
@@ -325,10 +312,9 @@
           <!-- section 6 col-3 -->
           <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-4">
             <img
-              src="./img/king's-palace.jpg"
+              src="../img/king's-palace.jpg"
               alt="king's-palace"
-              class="img-fluid rounded"
-            />
+              class="img-fluid rounded" />
             <div class="section6-text">
               <span class="fw-bold">King's Palace</span>
               <p class="text-start">
@@ -345,10 +331,9 @@
           <!-- section 6 col-4 -->
           <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12">
             <img
-              src="./img/kigali.jpg"
+              src="../img/kigali.jpg"
               alt="Iby'iwacu"
-              class="img-fluid rounded"
-            />
+              class="img-fluid rounded" />
             <div class="section6-text">
               <span class="fw-bold">Kigali city tour</span>
               <p class="text-start">
@@ -366,6 +351,6 @@
     </main>
     <!-- Main Content ends here -->
     <!-- Links to the js-script-folder -->
-    <script src="script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>
