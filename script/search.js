@@ -55,3 +55,52 @@ function displayError(message) {
   document.getElementById("weatherWidget").style.display = "none";
 }
 window.fetchWeather = fetchWeather;
+window.toggleForecast=toggleForecast;
+
+
+//  toggle for forecast
+function toggleForecast() {
+    const isChecked = document.getElementById("forecastToggle").checked;
+    let city = document.getElementById("cityInput").value.trim();
+  
+    if (isChecked) {
+      fetchForecast(city);
+      document.getElementById("weatherWidget").style.display = "none";
+    } else {
+      fetchWeather();
+      document.getElementById("forecastWidget").style.display = "none"; 
+    }
+  }
+  
+  //forecast for 3 days
+  function fetchForecast(city) {
+    
+      
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&days=3&q=${city}`;
+  
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        if (data.error) {
+          displayError(data.error.message);
+        } else {
+          displayForecast(data);
+        }
+      });
+  }
+  
+  // Display the 3-day forecast
+  function displayForecast(data) {
+    document.getElementById("weatherWidget").style.display = "none"; // Hide current weather
+    document.getElementById("forecastWidget").style.display = "block"; // Show forecast
+  
+    // Loop through 3 days 
+    for (let i = 0; i < 3; i++) {
+      document.getElementById(`date-${i+1}`).textContent = data.forecast.forecastday[i].date;
+      document.getElementById(`icon-${i+1}`).src = "https:" + data.forecast.forecastday[i].day.condition.icon;
+      document.getElementById(`condition-${i+1}`).textContent = data.forecast.forecastday[i].day.condition.text;
+      document.getElementById(`temp-${i+1}`).textContent = "Temp: " + data.forecast.forecastday[i].day.avgtemp_c + "°C";
+    }
+  }
+  
+  
