@@ -1,3 +1,12 @@
+/* Placeholder for rwanda page */
+#landing-page-rwanda {
+  background: url(../img/rwanda-1.png);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* section 4 */
 /* #region section 4 start*/
 .section4 {
@@ -6,35 +15,25 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.section4-title span, .section4-text {
-  background-color: rgba(0, 0, 0, 0.199); 
-  color: white; 
-
+.section4-title span,
+.section4-text {
+  background-color: rgba(0, 0, 0, 0.199);
+  color: white;
 }
 
-
-
-
-
-
-
-
-/* #endregion section 4 end*/
-
-/* section 5 */
-/* #region section 5 start*/
-
-
-
-/* #endregion section 5 end*/
-
-
-
-
-/* section 6 */
 /* #region section 6 start*/
 .section6 {
-  color: white;;
+  color: white;
 }
-
 /* #endregion section 6 end*/
+
+/* Header & sidebar @ width <= 991px */
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  table {
+    font-size: 14px;
+  }
+}
