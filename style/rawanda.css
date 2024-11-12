@@ -8,38 +8,43 @@
 }
 
 /* section 4 */
-/* #region section 4 start*/
 #info-rwanda {
   background-image: url(../img/zebra.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 50vh;
-  padding: 2rem;
 }
 
-.section4-title,
-.section4-text {
-  background-color: rgba(0, 0, 0, 0.199);
-  color: white;
-}
 
-/* #region section 6 start*/
-.section6 {
-  color: white;
-}
-.h1 {
+.section4 h1 {
   color: white;
   font-size: calc(2.3rem + 1.5vw);
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
-
 #rwanda-body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(2px) contrast(0.8);
 }
-/* #end region section 6 end*/
+
+/* section 5 */
+
+
+
+/* section 6 */
+.section6 {
+  color: white;
+}
+.section6 h4 {
+  text-align: center;
+  padding: 10px 0;
+}
+.section6 p {
+  text-align: left;
+}
+
+
+
+
 
 /* Header & sidebar @ width <= 991px */
 @media (max-width: 991px) {
@@ -47,7 +52,16 @@
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
-  table {
-    font-size: 14px;
+  
+}
+
+/* section 5 & sidebar >= 1200px */
+@media (min-width: 1200px) {
+  .table td, .table th {
+    padding: 16px;
+    font-size: larger;
+  }
+  .section6 {
+    font-size: larger;
   }
 }
