@@ -11,7 +11,7 @@
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../style/stylesheet.css" />
+
     <link rel="stylesheet" href="../style/rawanda.css" />
 
     <title>Rwanda | Weather App</title>
@@ -21,10 +21,10 @@
     <header>
       <!-- Navbar goes here -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-25 fixed-top">
+        class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-25 fixed-top">
         <div class="container">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">Rwanda</a>
+          <a class="navbar-brand fs-2" href="#">Rwanda</a>
           <!-- Toggle button -->
           <button
             class="navbar-toggler shadow-none border-0"
@@ -53,31 +53,41 @@
             </div>
             <!-- Sidebar body -->
             <div class="offcanvas-body">
-              <!-- <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mx-2 mt-3">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
 
                 <li class="nav-item mx-2 mt-3">
                   <a class="nav-link" href="#info-rwanda">Info Rwanda</a>
                 </li>
-              </ul> -->
+              </ul>
               <!-- Theme Toggle Buttons -->
-              <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <div class="mt-3 mx-1">
                 <!--Swedish theme-->
                 <div class="btn-group" role="group">
                   <a class="btn btn-outline-light ms-auto" href="index.html"
                     >Swedish theme</a
                   >
                   <!--Rwanda theme-->
-                  <a
-                    class="btn btn-outline-light ms-auto active"
-                    href="rawanda.html"
+                  <a class="btn btn-outline-light ms-auto active"
                     >Rwandan theme</a
-                  >
-                  <a class="btn btn-outline-light ms-auto" href="search.html"
-                    >Weather forecast</a
                   >
                 </div>
               </div>
               <!-- End of theme toggle buttons -->
+              <!--Weather forecast button-->
+              <div class="nav-item mt-3 mx-1">
+                <div class="button">
+                  <a
+                    class="btn btn-info btn btn-outline-dark"
+                    href="search.html"
+                    >Weather forecast</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -157,49 +167,24 @@
       </section>
 
       <!-- Section 4 Rwanda introduction -->
-      <section class="container-fluid align-content-center" id="info-rwanda">
-        <!-- <div
-          class="row mt-5 mb-5 align-items-center justify-content-center p-4">
-          <div
-            class="section4-title col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 fs-1 fw-bold">
-            <span>Info Rwanda</span>
-          </div>
-          <div
-            class="section4-text text-start col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            Rwanda, officially the Republic of Rwanda, is a landlocked country
-            in the Great Rift Valley of East Africa, where the African Great
-            Lakes region and Southeast Africa converge. Located a few degrees
-            south of the Equator, Rwanda is bordered by Uganda, Tanzania,
-            Burundi, and the Democratic Republic of the Congo. <br />
-            It is highly elevated, giving it the sobriquet "land of a thousand
-            hills" (French: pays des mille collines), with its geography
-            dominated by mountains in the west and savanna to the southeast,
-            with numerous lakes throughout the country. The climate is temperate
-            to subtropical, with two rainy seasons and two dry seasons each
-            year. It is the most densely populated mainland African country;
-            among countries larger than 10,000 km2, it is the fifth-most densely
-            populated country in the world. Its capital and largest city is
-            Kigali.
-          </div>
-        </div> -->
-
+      <section
+        class="container-fluid section4 min-vh-100 align-content-center"
+        id="info-rwanda">     
         <div
           class="card-body border-danger d-lg-flex justify-content-center gap-5">
           <div
-            class="text-white rounded-3 m-2 align-content-center justify-items-center col-lg-5">
-            <h1 class="h1 text-center">Rwanda</h1>
+            class="text-white rounded-3 m-2 align-content-center justify-items-center col-lg-6">
+            <h1 class="text-center">Rwanda</h1>
           </div>
           <div
-            class="text-white rounded-3 m-2 p-5 d-md-flex gap-4"
+            class="text-white rounded-3 m-2 p-5 align-content-center col-lg-5"
             id="rwanda-body">
-            <p class="card-text fs-5">
+            <p class="card-text fs-4">
               Rwanda, officially the Republic of Rwanda, is a landlocked country
               in the Great Rift Valley of East Africa, where the African Great
               Lakes region and Southeast Africa converge. Located a few degrees
               south of the Equator, Rwanda is bordered by Uganda, Tanzania,
-              Burundi, and the Democratic Republic of the Congo.
-            </p>
-            <p class="card-text fs-5">
+              Burundi, and the Democratic Republic of the Congo. <br />
               It is highly elevated, giving it the sobriquet "land of a thousand
               hills" (French: pays des mille collines), with its geography
               dominated by mountains in the west and savanna to the southeast,
@@ -217,7 +202,7 @@
       <section class="bg-secondary container-fluid section5 d-inline-block">
         <!-- section 5 table -->
         <div class="row p-3 align-items-center justify-content-center">
-          <div class="col-12 col-md-10">
+          <div class="col-12 col-xl-10 col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <table class="table table-striped table-dark">
               <tr>
                 <th>Country</th>
@@ -276,12 +261,8 @@
             </table>
           </div>
           <!-- section 5 image -->
-          <div class="col-12 col-md-2">
-            <img src="../img/flag.png" alt="flag" class="img-fluid rounded" />
-            <img
-              src="../img/rwanda-2.jpg"
-              alt="rwanda"
-              class="img-fluid rounded" />
+          <div class="col-12 col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">                         
+            <img src="./img/rwanda.png" alt="flag" class="img-fluid rounded" />                             
           </div>
         </div>
       </section>
@@ -289,14 +270,13 @@
       <section class="bg-secondary section6 container-fluid d-inline-block">
         <div class="row align-items-start justify-content-center p-3">
           <!-- section 6 col-1 -->
-          <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <img
               src="../img/elephant.jpg"
               alt="elephant"
               class="img-fluid rounded" />
-            <div class="section6-text">
-              <span class="fw-bold">Akagera National Park</span>
-              <p class="text-start">
+              <h4 class="fw-bold">Akagera National Park</h4>
+              <p>
                 Akagera National Park lies in eastern Rwanda, hugging the border
                 with Tanzania. It's characterized by woodland, swamps, low
                 mountains and savannah. The varied terrain shelters wildlife
@@ -305,17 +285,15 @@
                 part of the park, vast Lake Ihema is home to hippos and
                 crocodiles.
               </p>
-            </div>
           </div>
           <!-- section 6 col-2 -->
-          <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-4">
+          <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <img
               src="../img/gorilla.jpg"
               alt="gorilla"
               class="img-fluid rounded" />
-            <div class="section6-text">
-              <span class="fw-bold">Gorilla Tracking</span>
-              <p class="text-start">
+              <h4 class="fw-bold">Gorilla Tracking</h4>
+              <p>
                 The unique opportunity to see gorillas in their natural habitat
                 is unforgettable, some even say life changing. Encounters with
                 gorillas as they go about their daily lives are carefully
@@ -324,17 +302,15 @@
                 awe-inspiring hour just a few feet away from the gentle
                 creatures.
               </p>
-            </div>
           </div>
           <!-- section 6 col-3 -->
-          <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12 mb-4">
+          <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <img
               src="../img/king's-palace.jpg"
               alt="king's-palace"
               class="img-fluid rounded" />
-            <div class="section6-text">
-              <span class="fw-bold">King's Palace</span>
-              <p class="text-start">
+              <h4 class="fw-bold">King's Palace</h4>
+              <p>
                 A reconstruction of the traditional royal residence, the King’s
                 Palace is a beautifully-crafted thatched dwelling shaped like a
                 beehive. For a long time, the monarchy was mobile, moving the
@@ -343,17 +319,15 @@
                 kingdom had as many as 2,000 inhabitants, and huts built with
                 the same methods as seen here.
               </p>
-            </div>
           </div>
           <!-- section 6 col-4 -->
-          <div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+          <div class="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
             <img
               src="../img/kigali.jpg"
-              alt="Iby'iwacu"
+              alt="kigali"
               class="img-fluid rounded" />
-            <div class="section6-text">
-              <span class="fw-bold">Kigali city tour</span>
-              <p class="text-start">
+              <h4 class="fw-bold">Kigali city tour</h4>
+              <p>
                 Kigali is the capital city of Rwanda and the country’s vibrant
                 commercial center with all year round moderate climate allowing
                 you to visit any time of the year. It is one of the cleanest and
@@ -361,7 +335,6 @@
                 clean streets, safety and good governance, Kigali has been
                 chosen as host to many important international conferences.
               </p>
-            </div>
           </div>
         </div>
       </section>
@@ -371,3 +344,5 @@
     <script src="../script/script.js"></script>
   </body>
 </html>
+
+
