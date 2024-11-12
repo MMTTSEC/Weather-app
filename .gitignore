@@ -3,6 +3,7 @@
 .vscode
 .env
 ./script/config.js
+config.js
 
 ### macOS ###
 # General
