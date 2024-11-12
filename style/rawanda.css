@@ -11,11 +11,12 @@
 #info-rwanda {
   background-image: url(../img/zebra.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 50vh;
+  padding: 2rem;
 }
-
-
 .section4 h1 {
   color: white;
   font-size: calc(2.3rem + 1.5vw);
@@ -25,9 +26,6 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(2px) contrast(0.8);
 }
-
-/* section 5 */
-
 
 
 /* section 6 */
@@ -43,16 +41,15 @@
 }
 
 
-
-
-
 /* Header & sidebar @ width <= 991px */
 @media (max-width: 991px) {
   .sidebar {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
-  
+  table {
+    font-size: 14px;
+  }
 }
 
 /* section 5 & sidebar >= 1200px */
@@ -65,3 +62,4 @@
     font-size: larger;
   }
 }
+
