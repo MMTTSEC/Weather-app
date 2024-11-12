@@ -7,83 +7,188 @@ h1{
     
     text-align: center;
     padding: 20px;
-    text-shadow: -3px 3px 4px blue, 3px -3px 3px yellow ;
+    text-shadow: -2px 2px 2px blue, 2px -2px 2px yellow ;
     margin: 10px;
+    box-shadow: -10px 10px 10px blue, 10px -10px 10px yellow ;
+    border: solid blue;
+    border-radius: 20px;
 }
 
 p {
-    text-shadow: -1px 1px 1px black, 1px -1px 1px yellow , 1px -1px 1px black;
-    font: bold;
-    font-size: 20px;
-    margin: 10px
+    text-shadow: -1px 1px 1px blue, 1px -1px 1px yellow ;
+    font:900;
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+    font-size: x-large;
+    
 }
 
 
 h3{
-    text-shadow: -3px 3px 5px blue, 3px -3px 5px yellow ;
+    text-shadow: -2px 2px 2px blue, 2px -2px 2px yellow ;
     text-transform: uppercase;
     margin: 10px;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border: solid blue;
+    border-radius: 15px;
 }
 ul{
-    text-shadow: -1px 1px 5px blue, 1px -1px 5px yellow ;
+    text-shadow: -1px 1px 1px blue, 1px -1px 1px yellow;
     font-size: 22px;
     text-transform: capitalize;
     margin: 10px;
     padding: 0px;
-    font:bolder;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-   
+    font:900;
+    
+    
+
+    
 
 }
 .pic3{
-    width: 400px;
+    width: 370px;
     margin: 10px;
+    /*transform: translate(550px,0);*/
+    
+}
+.pic{
+    width: 400px;
 }
 
+.foot{
+    text-align: center;
+}
 .parent1{
     background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0),rgba(251, 255, 0, 0));
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
-    gap: 10px;
-
+    gap: 15px;
+    
     grid-template-areas: 
     "head head head head"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
     "nav nav sidebar sidebar"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
     "footer footer1 footer2 footer3"
-    
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
     
     ;
     
 }
+.fot1{
+    text-align: center;
+}
 .header{
    grid-area: head;
+   border-radius: 20px;
+   box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
     
     
 }
 .nav1{
     grid-area: nav;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
 
 }
 .sidebar1{
     grid-area: sidebar;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 .footer{
     grid-area: footer;
-    background-color: red;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+   
+   
 }
 .footer1{
     grid-area: footer1;
-    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+    
 }
 .footer2{
     grid-area: footer2;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+    
+    
 }
 .footer3{
     grid-area: footer3;
-    background-color: rgb(21, 255, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+
+    
+}
+.table{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: large;
+    border: solid blue;
+    color: yellow;
+    background-color: rgba(0, 0, 255, 0.185);
+    box-shadow:-10px 10px 10px yellow, 15px -15px 10px blue;
+    border-radius: 20px;
+
+    
+    
+
+   
 }
