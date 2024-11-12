@@ -4,7 +4,6 @@
 .env
 ./script/config.js
 config.js
-
 ### macOS ###
 # General
 .DS_Store
