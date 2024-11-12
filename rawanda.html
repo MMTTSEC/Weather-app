@@ -11,7 +11,7 @@
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="../style/stylesheet.css" />
     <link rel="stylesheet" href="../style/rawanda.css" />
 
     <title>Rwanda | Weather App</title>
@@ -21,10 +21,10 @@
     <header>
       <!-- Navbar goes here -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-25 fixed-top">
+        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-25 fixed-top">
         <div class="container">
           <!-- Logo -->
-          <a class="navbar-brand fs-2" href="#">Rwanda</a>
+          <a class="navbar-brand" href="#">Rwanda</a>
           <!-- Toggle button -->
           <button
             class="navbar-toggler shadow-none border-0"
@@ -53,41 +53,31 @@
             </div>
             <!-- Sidebar body -->
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item mx-2 mt-3">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
+              <!-- <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
                 <li class="nav-item mx-2 mt-3">
                   <a class="nav-link" href="#info-rwanda">Info Rwanda</a>
                 </li>
-              </ul>
+              </ul> -->
               <!-- Theme Toggle Buttons -->
-              <div class="mt-3 mx-1">
+              <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <!--Swedish theme-->
                 <div class="btn-group" role="group">
                   <a class="btn btn-outline-light ms-auto" href="index.html"
                     >Swedish theme</a
                   >
                   <!--Rwanda theme-->
-                  <a class="btn btn-outline-light ms-auto active"
+                  <a
+                    class="btn btn-outline-light ms-auto active"
+                    href="rawanda.html"
                     >Rwandan theme</a
                   >
-                </div>
-              </div>
-              <!-- End of theme toggle buttons -->
-              <!--Weather forecast button-->
-              <div class="nav-item mt-3 mx-1">
-                <div class="button">
-                  <a
-                    class="btn btn-info btn btn-outline-dark"
-                    href="search.html"
+                  <a class="btn btn-outline-light ms-auto" href="search.html"
                     >Weather forecast</a
                   >
                 </div>
               </div>
+              <!-- End of theme toggle buttons -->
             </div>
           </div>
         </div>
@@ -167,9 +157,7 @@
       </section>
 
       <!-- Section 4 Rwanda introduction -->
-      <section
-        class="container-fluid min-vh-100 align-content-center"
-        id="info-rwanda">
+      <section class="container-fluid align-content-center" id="info-rwanda">
         <!-- <div
           class="row mt-5 mb-5 align-items-center justify-content-center p-4">
           <div
@@ -198,18 +186,20 @@
         <div
           class="card-body border-danger d-lg-flex justify-content-center gap-5">
           <div
-            class="text-white rounded-3 m-2 align-content-center justify-items-center col-lg-6">
+            class="text-white rounded-3 m-2 align-content-center justify-items-center col-lg-5">
             <h1 class="h1 text-center">Rwanda</h1>
           </div>
           <div
-            class="text-white rounded-3 m-2 p-5 align-content-center col-lg-5"
+            class="text-white rounded-3 m-2 p-5 d-md-flex gap-4"
             id="rwanda-body">
-            <p class="card-text fs-4">
+            <p class="card-text fs-5">
               Rwanda, officially the Republic of Rwanda, is a landlocked country
               in the Great Rift Valley of East Africa, where the African Great
               Lakes region and Southeast Africa converge. Located a few degrees
               south of the Equator, Rwanda is bordered by Uganda, Tanzania,
-              Burundi, and the Democratic Republic of the Congo. <br />
+              Burundi, and the Democratic Republic of the Congo.
+            </p>
+            <p class="card-text fs-5">
               It is highly elevated, giving it the sobriquet "land of a thousand
               hills" (French: pays des mille collines), with its geography
               dominated by mountains in the west and savanna to the southeast,
