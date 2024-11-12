@@ -9,13 +9,14 @@
 
 /* section 4 */
 /* #region section 4 start*/
-.section4 {
+#info-rwanda {
   background-image: url(../img/zebra.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.section4-title span,
+
+.section4-title,
 .section4-text {
   background-color: rgba(0, 0, 0, 0.199);
   color: white;
@@ -25,7 +26,17 @@
 .section6 {
   color: white;
 }
-/* #endregion section 6 end*/
+.h1 {
+  color: white;
+  font-size: calc(2.3rem + 1.5vw);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#rwanda-body {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px) contrast(0.8);
+}
+/* #end region section 6 end*/
 
 /* Header & sidebar @ width <= 991px */
 @media (max-width: 991px) {
