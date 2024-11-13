@@ -7,6 +7,8 @@ const apiKey = config.weatherApiKey;
 function fetchWeather() {
   let city = document.getElementById("cityInput").value.trim();
   let errorMessage = document.getElementById("errorMessage");
+  document.getElementById("forecastToggle").checked = false;
+  document.getElementById("forecastWidget").style.display = "none";
     // input validation
   if (city === "") {
     errorMessage.textContent = "Please enter a city name.";
@@ -70,6 +72,7 @@ function toggleForecast() {
       fetchWeather();
       document.getElementById("forecastWidget").style.display = "none"; 
     }
+    
   }
   
   //forecast for 3 days
@@ -87,6 +90,7 @@ function toggleForecast() {
           displayForecast(data);
         }
       });
+      
   }
   
   // Display the 3-day forecast
@@ -99,7 +103,7 @@ function toggleForecast() {
       document.getElementById(`date-${i+1}`).textContent = data.forecast.forecastday[i].date;
       document.getElementById(`icon-${i+1}`).src = "https:" + data.forecast.forecastday[i].day.condition.icon;
       document.getElementById(`condition-${i+1}`).textContent = data.forecast.forecastday[i].day.condition.text;
-      document.getElementById(`temp-${i+1}`).textContent = "Temp: " + data.forecast.forecastday[i].day.avgtemp_c + "°C";
+      document.getElementById(`temp-${i+1}`).textContent = data.forecast.forecastday[i].day.avgtemp_c + "°C";
     }
   }
   
