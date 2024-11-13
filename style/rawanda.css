@@ -1,0 +1,61 @@
+/* Placeholder for rwanda page */
+#landing-page-rwanda {
+  background: url(../img/rwanda-1.png);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* section 4 */
+#info-rwanda {
+  background-image: url(../img/zebra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.section4 h1 {
+  color: white;
+  font-size: calc(2.3rem + 1.5vw);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+#rwanda-body {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px) contrast(0.8);
+}
+
+/* section 6 */
+.section6 {
+  color: white;
+}
+.section6 h4 {
+  text-align: center;
+  padding: 10px 0;
+}
+.section6 p {
+  text-align: left;
+}
+
+
+/* Header & sidebar @ width <= 991px */
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  table {
+    font-size: 14px;
+  }
+}
+/* section 5 & sidebar >= 1200px */
+@media (min-width: 1200px) {
+  .table td, .table th {
+    padding: 16px;
+    font-size: larger;
+  }
+  .section6 {
+    font-size: larger;
+  }
+}
