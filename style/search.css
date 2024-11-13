@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 @media (max-width: 991px) {
   .sidebar {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
+=======
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+>>>>>>> 5dca00c09aa8360629f115243658be5965638b7d
 }
