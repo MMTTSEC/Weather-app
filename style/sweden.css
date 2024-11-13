@@ -228,6 +228,7 @@ ul{
             
     }
 
+
     .nav1, .sidebar1, .footer, .footer1, .footer2, .footer3 {
         width: 100%;
     }
@@ -258,5 +259,16 @@ ul{
         font-size: 14px;
         width: 100%;
         margin-top: 60px;
+    }
+
+    .pic3{
+        width: 300px;
+        margin: 10px;
+
+    }
+
+    .pic{
+        width: 380px;
+        margin: 15px;
     }
 }
