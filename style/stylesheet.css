@@ -69,6 +69,9 @@
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
+  table {
+    font-size: 14px;
+  }
 }
 /* section 5 & sidebar >= 1200px */
 @media (min-width: 1200px) {
