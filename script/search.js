@@ -28,6 +28,7 @@ function fetchWeather() {
     if (data.error) {
       displayError(data.error.message); // Show error from the API response
     } else {
+      sessionStorage.setItem("weatherData", JSON.stringify(data));
       displayCurrentWeather(data); // Show weather data if no error
     }
   })
@@ -59,6 +60,13 @@ function displayError(message) {
 window.fetchWeather = fetchWeather;
 window.toggleForecast=toggleForecast;
 
+ // Load stored data if available
+ function loadStoredWeather() {
+  const storedWeatherData = sessionStorage.getItem("weatherData");
+  if (storedWeatherData) {
+    displayCurrentWeather(JSON.parse(storedWeatherData));
+  }
+}
 
 //  toggle for forecast
 function toggleForecast() {
@@ -87,6 +95,7 @@ function toggleForecast() {
         if (data.error) {
           displayError(data.error.message);
         } else {
+          sessionStorage.setItem("forecastData", JSON.stringify(data)); 
           displayForecast(data);
         }
       });
@@ -107,4 +116,17 @@ function toggleForecast() {
     }
   }
   
-  
+ 
+  // Load forecast if available
+function loadStoredForecast() {
+  const storedForecastData = sessionStorage.getItem("forecastData");
+  if (storedForecastData) {
+    displayForecast(JSON.parse(storedForecastData));
+  }
+}
+
+// Run when page load
+window.addEventListener("load", () => {
+  loadStoredWeather();
+  loadStoredForecast();
+});
