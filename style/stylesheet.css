@@ -3,11 +3,49 @@
 }
 /* Placeholder for landing page */
 #landing-page {
-  background: url(../img/sweden-1.jpeg);
+  background: url(../img/sweden.jpeg);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* section 4 */
+#info-sweden {
+  background-image: url(../img/stockholm-1.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+.section4 h1 {
+  color: white;
+  font-size: calc(2.3rem + 1.5vw);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+#sweden-body {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px) contrast(0.8);
+}
+/* section 5 */
+.section5,
+.section6 {
+  background-color: #0071ae;
+}
+
+/* section 6 */
+.section6 {
+  color: whitesmoke;
+}
+.section6 h4 {
+  text-align: center;
+  padding: 10px 0;
+}
+.section6 p {
+  text-align: left;
 }
 
 .widget {
@@ -30,5 +68,16 @@
   .sidebar {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
+  }
+}
+/* section 5 & sidebar >= 1200px */
+@media (min-width: 1200px) {
+  .table td,
+  .table th {
+    padding: 16px;
+    font-size: larger;
+  }
+  .section6 {
+    font-size: larger;
   }
 }
