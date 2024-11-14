@@ -7,6 +7,8 @@ const apiKey = config.weatherApiKey;
 function fetchWeather() {
   let city = document.getElementById("cityInput").value.trim();
   let errorMessage = document.getElementById("errorMessage");
+  document.getElementById("forecastToggle").checked = false;
+  document.getElementById("forecastWidget").style.display = "none";
     // input validation
   if (city === "") {
     errorMessage.textContent = "Please enter a city name.";
@@ -26,6 +28,7 @@ function fetchWeather() {
     if (data.error) {
       displayError(data.error.message); // Show error from the API response
     } else {
+      sessionStorage.setItem("weatherData", JSON.stringify(data));
       displayCurrentWeather(data); // Show weather data if no error
     }
   })
@@ -57,6 +60,13 @@ function displayError(message) {
 window.fetchWeather = fetchWeather;
 window.toggleForecast=toggleForecast;
 
+ // Load stored data if available
+ function loadStoredWeather() {
+  const storedWeatherData = sessionStorage.getItem("weatherData");
+  if (storedWeatherData) {
+    displayCurrentWeather(JSON.parse(storedWeatherData));
+  }
+}
 
 //  toggle for forecast
 function toggleForecast() {
@@ -70,6 +80,7 @@ function toggleForecast() {
       fetchWeather();
       document.getElementById("forecastWidget").style.display = "none"; 
     }
+    
   }
   
   //forecast for 3 days
@@ -84,9 +95,11 @@ function toggleForecast() {
         if (data.error) {
           displayError(data.error.message);
         } else {
+          sessionStorage.setItem("forecastData", JSON.stringify(data)); 
           displayForecast(data);
         }
       });
+      
   }
   
   // Display the 3-day forecast
@@ -99,8 +112,21 @@ function toggleForecast() {
       document.getElementById(`date-${i+1}`).textContent = data.forecast.forecastday[i].date;
       document.getElementById(`icon-${i+1}`).src = "https:" + data.forecast.forecastday[i].day.condition.icon;
       document.getElementById(`condition-${i+1}`).textContent = data.forecast.forecastday[i].day.condition.text;
-      document.getElementById(`temp-${i+1}`).textContent = "Temp: " + data.forecast.forecastday[i].day.avgtemp_c + "°C";
+      document.getElementById(`temp-${i+1}`).textContent = data.forecast.forecastday[i].day.avgtemp_c + "°C";
     }
   }
   
-  
+ 
+  // Load forecast if available
+function loadStoredForecast() {
+  const storedForecastData = sessionStorage.getItem("forecastData");
+  if (storedForecastData) {
+    displayForecast(JSON.parse(storedForecastData));
+  }
+}
+
+// Run when page load
+window.addEventListener("load", () => {
+  loadStoredWeather();
+  loadStoredForecast();
+});
