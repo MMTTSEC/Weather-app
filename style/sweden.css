@@ -1,0 +1,274 @@
+body{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.568),rgba(255, 255, 255, 0.274)), url(../img/swedenpic2.jpg);
+    height: 100vh;
+
+}
+h1{
+    
+    text-align: center;
+    padding: 20px;
+    text-shadow: -2px 2px 3px blue, 2px -2px 3px yellow ;
+    margin: 10px;
+    box-shadow: -10px 10px 10px blue, 10px -10px 10px yellow ;
+    border: solid blue;
+    border-radius: 20px;
+}
+.hed{
+    word-spacing: 6px;
+    letter-spacing: 2px;
+}
+
+p {
+    text-shadow: -1px 1px 1px blue, 2px -2px 2px yellow ;
+    font:900;
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+    font-size: x-large;
+    
+    
+}
+
+
+h3{
+    text-shadow: -2px 2px 2px blue, 2px -2px 2px yellow ;
+    text-transform: uppercase;
+    margin: 10px;
+    box-shadow:-10px 10px 10px blue, 10px -10px 10px yellow;
+    border: solid blue;
+    border-radius: 15px;
+}
+ul{
+    text-shadow: -1px 1px 1px blue, 1px -1px 1px yellow;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 10px;
+    padding: 0px;
+    font:900;
+    
+    
+
+    
+
+}
+.pic3{
+    width: 370px;
+    margin: 10px;
+    /*transform: translate(550px,0);*/
+    
+}
+.pic{
+    width: 400px;
+}
+
+.foot{
+    text-align: center;
+    
+
+}
+.parent1{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.274),rgba(255, 255, 255, 0.295));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 15px;
+    
+    grid-template-areas: 
+    "head head head head"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    "nav nav sidebar sidebar"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    "footer footer1 footer2 footer3"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    
+    ;
+    
+}
+.fot1{
+    text-align: center;
+}
+.header{
+   grid-area: head;
+   border-radius: 20px;
+   box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    
+    
+}
+.nav1{
+    grid-area: nav;
+    box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+
+
+}
+.sidebar1{
+    grid-area: sidebar;
+    box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 30px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+
+}
+.footer{
+    grid-area: footer;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+    word-spacing: 14px;
+    letter-spacing: 2px;
+   
+   
+}
+.footer1{
+    grid-area: footer1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    
+    
+}
+.footer2{
+    grid-area: footer2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    
+   
+    
+    
+}
+.footer3{
+    grid-area: footer3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:-10px 10px 8px blue, 10px -10px 8px yellow;
+    border-radius: 20px ;
+    border: solid blue;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+   
+
+    
+}
+.table{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: large;
+    border: solid blue;
+    background-color: rgba(0, 0, 255, 0.185);
+    box-shadow:-5px 5px 8px yellow, 15px -15px 8px blue;
+    border-radius: 20px;
+    text-shadow: -1px 1px 1px blue, 3px -3px 3px yellow, -3px -3px 3px yellow;
+
+}
+
+@media screen and (max-width: 435px) {
+    .parent1 {
+        gap: 50px;
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "head"
+            "nav"
+            "sidebar"
+            "footer"
+            "footer1"
+            "footer2"
+            "footer3";
+            
+    }
+
+
+    .nav1, .sidebar1, .footer, .footer1, .footer2, .footer3 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    ul {
+        font-size: 18px;
+    }
+
+    .pic, .pic3 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    
+    .table {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .pic3{
+        width: 300px;
+        margin: 10px;
+
+    }
+
+    .pic{
+        width: 380px;
+        margin: 15px;
+    }
+}
