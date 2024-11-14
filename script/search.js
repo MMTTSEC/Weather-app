@@ -9,6 +9,7 @@ function fetchWeather() {
   let errorMessage = document.getElementById("errorMessage");
   document.getElementById("forecastToggle").checked = false;
   document.getElementById("forecastWidget").style.display = "none";
+  sessionStorage.removeItem("forecastData");
     // input validation
   if (city === "") {
     errorMessage.textContent = "Please enter a city name.";
